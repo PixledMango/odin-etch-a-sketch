@@ -6,22 +6,12 @@ gridSquare.classList.add("grid-section")
 
 const changeGridSizeButton = document.querySelector("button")
 
-
-
 gridSize = 16
 createGrid()
 
 
 
 
-grid = document.querySelectorAll(".grid-section");
-
-
-grid.forEach((gridSquare) => {
-    gridSquare.addEventListener("mouseover", () => {
-        gridSquare.style.backgroundColor = "black"
-    });
-})
 
 changeGridSizeButton.addEventListener("click", () => {
     console.log("BUTTON PRSSESS")
@@ -56,6 +46,11 @@ function createGrid() {
         }
     }
     grid = document.querySelectorAll(".grid-section");
+    grid.forEach((gridSquare) => {
+        gridSquare.addEventListener("mouseover", () => {
+            gridSquare.style.backgroundColor = "black"
+        });
+    })
 }
 
 
