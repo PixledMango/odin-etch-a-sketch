@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etch-a-sketch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.grid-section {
+    border: 1px black solid;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+}
