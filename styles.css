@@ -1,6 +1,7 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -10,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 20px black solid;
 }
 
 .grid-row {
@@ -19,8 +21,41 @@ body {
 
 
 .grid-section {
-    border: 1px black solid;
+    border: 1px #111111 solid;
     height: 20px;
     width: 20px;
-    background-color: red;
+    background-color: #ffffff;
+}
+
+button {
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.etch-a-sketch-design {
+    min-width: 700px;
+    min-width: 700px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ee0000;
+    padding: 20px;
+    border-radius: 60px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.drawing-wheels {
+    height: 100px;
+    width: 100px;
+    background-color: #c5c5c5;
+    border-radius: 100%;
+    margin: 0px;
 }
