@@ -48,8 +48,11 @@ function createGrid() {
     grid = document.querySelectorAll(".grid-section");
     grid.forEach((gridSquare) => {
         gridSquare.addEventListener("mouseover", () => {
-            console.log("HOVER TIME")
-            gridSquare.style.backgroundColor = "black"
+            // Why does it require it be parsed as a string, that just makes things needlesly complicated
+            let currentOpacity = parseFloat(gridSquare.style.opacity) || 0
+            currentOpacity += 0.5
+            if (currentOpacity > 1) currentOpacity = 1
+            gridSquare.style.opacity = currentOpacity
         });
     })
 }
