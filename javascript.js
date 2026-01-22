@@ -48,6 +48,7 @@ function createGrid() {
     grid = document.querySelectorAll(".grid-section");
     grid.forEach((gridSquare) => {
         gridSquare.addEventListener("mouseover", () => {
+            console.log("HOVER TIME")
             gridSquare.style.backgroundColor = "black"
         });
     })
