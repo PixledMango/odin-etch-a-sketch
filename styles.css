@@ -9,11 +9,10 @@ body {
 .etch-a-sketch-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     border: 20px rgb(255, 0, 255) solid;
-    height: 320px;
-    width: 320px;
+    height: 300px;
+    width: 300px;
     background-color: green;
 }
 
@@ -21,18 +20,16 @@ body {
     display: flex;
     flex: 1;
     flex-direction: row;
-    height: 10px;
 }
 
 .grid-section {
     display: flex;
     flex: 1;
-    width: 10px;
     background-color: #eeeeee;
 }
 
 
-*/ button {
+button {
     padding: 20px;
     margin: 20px;
     font-size: 30px;

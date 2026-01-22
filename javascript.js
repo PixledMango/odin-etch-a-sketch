@@ -15,11 +15,11 @@ createGrid()
 
 changeGridSizeButton.addEventListener("click", () => {
     console.log("BUTTON PRSSESS")
-    gridSize = prompt("What size grid would you like? Min of 16 and Max of 48.", 16)
-    if (gridSize > 48)
-        gridSize = 48
-    else if (gridSize < 16)
-        gridSize = 16
+    gridSize = prompt("What size grid would you like? Min of 1 and Max of 100.", 16)
+    if (gridSize > 100)
+        gridSize = 100
+    else if (gridSize < 1)
+        gridSize = 1
 
     destroyGrid()
     createGrid()
